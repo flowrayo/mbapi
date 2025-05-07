@@ -3,7 +3,7 @@ import { client } from "../lib/client";
 
 export async function searchRanks(req: Request, res: Response) {
   try {
-    const resp = await client.post(`https://moviebox.ng/wefeed-h5-bff/web/subject/search-rank`);
+    const resp = await client.post(`https://moviebox.ph/wefeed-h5-bff/web/subject/search-rank`);
     const data = resp.data;
 
     res.status(200).json(data);
