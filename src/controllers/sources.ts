@@ -16,7 +16,7 @@ export async function sources(req: Request, res: Response) {
 
     const resp = await client.get(`/wefeed-h5-bff/web/subject/play?subjectId=${subjectId}&se=${se}&ep=${ep}`, {
       headers: {
-        Referer: `https://moviebox.ng/movies/${id}`,
+        Referer: `https://moviebox.ph/movies/${id}`,
       }
     });
     const data = resp.data;
