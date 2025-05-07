@@ -10,7 +10,7 @@ export async function captions(req: Request, res: Response) {
       return
     }
 
-    const resp = await client.get(`https://moviebox.ng/wefeed-h5-bff/web/subject/caption?format=MP4&id=${id}&subjectId=${subjectId}`);
+    const resp = await client.get(`https://moviebox.ph/wefeed-h5-bff/web/subject/caption?format=MP4&id=${id}&subjectId=${subjectId}`);
     const data = resp.data;
 
     res.status(200).json(data);
